@@ -8,6 +8,7 @@
 <body>
     <form action="">
         @csrf
+        Adj meg egy műfajt: <input type="text" name="" id="">
     </form>
 </body>
 </html>
