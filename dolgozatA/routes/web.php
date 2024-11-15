@@ -16,7 +16,6 @@ Route::get('/new-book', [BookController::class, 'index'])->name('books.index');
 Route::post('/new-book', [BookController::class, 'store'])->name('books.store');
 
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

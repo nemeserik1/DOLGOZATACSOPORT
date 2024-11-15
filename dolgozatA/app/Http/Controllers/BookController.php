@@ -19,6 +19,7 @@ class BookController extends Controller
         $request->validate(
             [
                 'topic_id' => 'required|integer|exists:topics,id',
+                'book_genre' => 'required|string',
                 'book_title' => 'required|string|max:255',
                 'book_year'=> 'required|integer|min:2|max:4',
             ],
