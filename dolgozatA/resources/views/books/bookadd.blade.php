@@ -15,8 +15,8 @@
     @endif
     <form action="{{route('books.store')}}" method="POST">
     @csrf
-    <label for="topic_id">Válasz ki a műfajt:</label>
-        <select name="topic_id" id="topic_id">
+    <label for="book_genre">Válasz ki a műfajt:</label>
+        <select name="book_genre" id="book_genre">
             @foreach ($topics as $topic)
                 <option value="{{$topic->id}}">{{$topic->topic_book_genre}}</option>
             @endforeach
@@ -25,7 +25,9 @@
         <input type="text" name="book_title" id="book_title">
         <br>
         <label for="book_year">Kiadási év:</label>
-        <input type="text" name="book_year" id="book_year">
+        <input type="date" name="book_year" id="book_year">
+    <br>
+        <button type="submit">Új könyv</button>
     </form>
 </body>
 </html>
