@@ -10,5 +10,5 @@ class Topic extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [];
+    protected $fillable = ['topic_book_genre'];
 }
