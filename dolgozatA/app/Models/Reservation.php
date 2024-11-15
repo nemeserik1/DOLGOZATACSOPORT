@@ -10,5 +10,9 @@ class Reservation extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['reservation_email','reservation_time', 'reservation_backtime'];
+    protected $fillable = ['reservation_email','reservation_time', 'book_id' ,'reservation_backtime'];
+
+    public function book(){
+        return $this->belongsTo(Book::class);
+    }
 }
