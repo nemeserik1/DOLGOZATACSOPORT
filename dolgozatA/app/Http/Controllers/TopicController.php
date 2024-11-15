@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Topic;
 use Illuminate\Http\Request;
 
-class SubjectController extends Controller
+class TopicController extends Controller
 {
     public function index(){
-        return view('topics.create');
+        return view('topics.genre');
     }
 
     public function store(Request $request){
@@ -20,9 +20,4 @@ class SubjectController extends Controller
         return redirect()->back()->with('success', 'GENRE stored.');
     }
 
-}
-
-class TopicController extends Controller
-{
-       
 }
