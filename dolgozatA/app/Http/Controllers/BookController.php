@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 class BookController extends Controller
 {
     public function index(){
-        return view('topics.genre');
+
+        $topics = Topic::all();
+        return view('books.bookadd', compact('topics'));
     }
+
+
 }
