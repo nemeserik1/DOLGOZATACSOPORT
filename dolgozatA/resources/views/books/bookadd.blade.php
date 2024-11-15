@@ -21,7 +21,11 @@
                 <option value="{{$topic->id}}">{{$topic->topic_book_genre}}</option>
             @endforeach
         </select><br>
-        
+        <label for="book_title">Könyv címe:</label>
+        <input type="text" name="book_title" id="book_title">
+        <br>
+        <label for="book_year">Kiadási év:</label>
+        <input type="text" name="book_year" id="book_year">
     </form>
 </body>
 </html>
