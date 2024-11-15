@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('reservation_email');
+            $table->foreignKey('book_id');
+            $table->date('reservation_time');
+            $table->date('reservation_backtime');
         });
     }
 
