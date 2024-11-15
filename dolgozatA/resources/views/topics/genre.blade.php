@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route('topic.store')}}" method="POST">
+    <form action="{{route('topics.store')}}" method="POST">
         @csrf
         <label for="topic_book_genre">Adj meg egy műfajt:</label>
          <input type="text" name="topic_book_genre" id="topic_book_genre">
