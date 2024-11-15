@@ -18,7 +18,7 @@ class BookController extends Controller
     public function store(Request $request){
         $request->validate(
             [
-                'topic_id' => 'integer|exists:topics,id',
+                //'topic_id' => 'integer|exists:topics,id',
                 'book_genre' => 'required|string',
                 'book_title' => 'required|string|max:255',
                 'book_year'=> 'required|date',
@@ -26,7 +26,7 @@ class BookController extends Controller
         );
 
         $book = Book::create([
-            'topic_id' => $request->topic_id,
+            //'topic_id' => $request->topic_id,
             'book_title' => $request->book_title,
             'book_genre' => $request->book_genre,
             'book_year' => $request->book_year,

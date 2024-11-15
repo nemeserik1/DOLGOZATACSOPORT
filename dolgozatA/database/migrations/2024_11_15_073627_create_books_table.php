@@ -17,7 +17,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('book_title');
             $table->string('book_genre');
-            $table->integer('book_year');
+            $table->date('book_year');
             $table->softDeletes();
         });
     }

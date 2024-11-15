@@ -18,7 +18,7 @@
     <label for="book_genre">Válasz ki a műfajt:</label>
         <select name="book_genre" id="book_genre">
             @foreach ($topics as $topic)
-                <option value="{{$topic->id}}">{{$topic->topic_book_genre}}</option>
+                <option value="{{$topic->topic_book_genre}}">{{$topic->topic_book_genre}}</option>
             @endforeach
         </select><br>
         <label for="book_title">Könyv címe:</label>
