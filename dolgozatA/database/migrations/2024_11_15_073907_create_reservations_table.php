@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('reservation_email');
-            $table->foreignKey('book_id');
+            $table->integer('book_id');
             $table->date('reservation_time');
             $table->date('reservation_backtime');
             $table->softDeletes();
