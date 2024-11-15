@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="{{route('topic.store')}}" method="POST">
         @csrf
-        Adj meg egy műfajt: <input type="text" name="" id="">
+        <label for="topic_book_genre">Adj meg egy műfajt:</label>
+         <input type="text" name="topic_book_genre" id="topic_book_genre">
+         <button type="submit">SAVE</button>
     </form>
 </body>
 </html>
